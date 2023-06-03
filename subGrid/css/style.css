@@ -1,0 +1,140 @@
+body {
+    margin: 40px;
+}
+h1 {
+    padding:0;
+    margin:0;
+}
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+}
+h1{
+    font-size: 30px;
+}
+p {
+    font-size:20px;
+}
+.box .box {
+    background-color: #999;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+    "b a a a a c"
+    "b i i i i c"
+    "b m m m m c"
+    "b br br br br c"
+    "b s s s s c"
+    ;
+
+    grid-auto-rows: auto;
+    background-color: #fff;
+    color: #444;
+    margin: 4em 0;
+}
+.a{ 
+    grid-column:1/auto;
+    grid-area:a;
+    }
+.b {
+    grid-area:b;
+}
+.c {
+    grid-area:c;
+}
+/* Top Hero Container */
+.i {
+    display: grid;
+    padding: 0;
+    grid-gap: 10px;
+    /* grid-column: auto / span 3; */
+    /* display: contents; */
+    /* grid-template-columns: subgrid; */
+    grid-area:i;
+    grid-template-areas:
+    "j j l l l2 l2"
+    "j j l l l2 l2"
+    "k k l l l2 l2"
+    "k k l l l2 l2"
+    ;
+}
+.j {
+    grid-area:j;
+}
+.k {
+    grid-area:k;
+}
+.l {
+    grid-area:l;
+    
+}
+.l2 {
+    grid-area:l2;
+    
+}
+/* End of top hero container */
+
+/*Get To Know section container*/
+.m {
+    display: grid;
+    padding: 0;
+    grid-gap: 10px;
+    /* grid-column: auto / span 3; */
+    /* display: contents; */
+    /* grid-template-columns: subgrid; */
+    grid-template-areas:
+    "p p q q"
+    "p p q q"
+    ;
+    grid-area:m;
+}
+.p {
+    grid-area:p;
+}
+.q {
+    grid-area:q;
+}
+/*End of Get To Know section container */
+
+/*Image page break*/
+.r {
+    grid-area:br-start/b-start/br-end/c-end;
+    height:20vh;
+    background: no-repeat center url("https://placehold.co/1600x1000");
+}
+/*End of image page break*/
+
+/*Start of Skills/Experience Section */
+
+.s {
+    display: grid;
+    padding: 0;
+    grid-gap: 10px;
+    /* grid-column: auto / span 3; */
+    /* display: contents; */
+    /* grid-template-columns: subgrid; */
+    grid-template-areas:
+    "t t t u u u"
+    /* "p p q q" */
+    ;
+    grid-area:s;
+}
+
+.t {
+    grid-area:t;
+}
+.u {
+    grid-area:u;
+}
+
+
+
+
+

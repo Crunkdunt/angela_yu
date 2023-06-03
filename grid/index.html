@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*div{
+            border: 2px solid black;
+        }
+
+        .container {
+            border: 2px solid red;
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas: 
+            "header header header header header"
+            "main main . main main"
+            "main main . main main"
+            "lower lower . lower lower"
+            "lower lower . lower lower"
+            "footer footer footer footer footer";
+        }
+
+        .header {
+            border: 2px solid blue;
+            grid-area:header;
+            
+        }
+
+        .main {
+            border: 2px solid palevioletred;
+            grid-area:main;
+        }
+        
+        .main-left {
+            border: 2px solid orange;
+            grid-area:main-left;
+        }
+
+        .main-right {
+            border: 2px solid lightblue;
+            grid-area: main-right;
+        }
+
+        .lower {
+            border: 2px solid seagreen;
+            grid-area:lower;
+        }
+
+        .lower-left {
+            border: 2px solid lime;
+        }
+
+        .skills {
+            border: 2px solid brown;
+            grid-area:skills;
+        }
+
+        .trivia {
+            border: 2px solid greenyellow;
+            grid-area:trivia;
+        }
+
+        .lower-right {
+            border: 2px solid rgb(189, 124, 201);
+        }
+        
+        .footer {
+            border: 2px solid khaki;
+            grid-area: footer;
+        }
+
+        .footer-left {
+            border: 2px solid burlywood;
+        }
+
+        .footer-center {
+            border: 2px solid mediumspringgreen;
+        }
+
+        .footer-right {
+            border: 2px solid goldenrod;
+        }*/
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 0.3fr 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header"
+        "header header header header header"
+        "about about . portfolio portfolio"
+        "about about . portfolio portfolio"
+        "skills skills . work work"
+        "trivia trivia . work work"
+        "footer footer footer footer footer";
+    }
+
+.header { grid-area: header; }
+
+.about { grid-area: about; }
+
+.portfolio { grid-area: portfolio; }
+
+.footer { grid-area: footer; }
+
+.skills { grid-area: skills; }
+
+.trivia { grid-area: trivia; }
+
+.work { grid-area: work; }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="header">header</div>
+        <div class="main">
+            <div class="main-left">Left Main About</div>
+            <div class="main-right">Right Main Work</div>
+        </div>
+
+        <div class="lower">
+            <div class="lower-left">
+                <div class="skills">Lower Top Left Skills</div>
+                <div class="trivia">Lower Bottom Left Trivia</div>
+            </div>
+            <div class="lower-right">
+                <div class="employment">Lower Right Employment</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-left">Footer Left</div>
+            <div class="footer-center">Footer Center</div>
+            <div class="footer-right">Footer Right</div>
+        </div>
+    </div> -->
+    <div class="container">
+  <div class="header">header</div>
+  <div class="about">about</div>
+  <div class="portfolio">portfolio</div>
+  <div class="footer">footer</div>
+  <div class="skills">skills</div>
+  <div class="trivia">trivia</div>
+  <div class="work">work
+    workwork
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sapiente at deleniti culpa, blanditiis est quidem, eius, facere voluptatum doloremque fugiat illum. Rem distinctio cupiditate assumenda omnis, quo incidunt blanditiis.
+    Quia sed, quas ex, assumenda fugit debitis ipsum quaerat cumque exercitationem et cupiditate commodi dolor possimus aliquid laudantium aperiam. Nulla maiores possimus distinctio deleniti cupiditate et ipsum eveniet ut tempora!
+    Unde deleniti ab eius quod nobis at aspernatur ipsam. Facere est cupiditate facilis, voluptatem perferendis nostrum nesciunt vitae unde cum? Repellat repudiandae veniam culpa eaque mollitia eos ipsum vitae quisquam?
+    Dignissimos, dolore officia. Quas odit saepe iure amet odio illum ullam ipsum labore dolores cupiditate praesentium placeat hic doloremque deserunt commodi, eligendi quidem autem error veritatis nostrum voluptatum. Ex, earum.
+    Dolore ullam aspernatur eligendi. Rem fugiat mollitia repellendus rerum exercitationem assumenda, dolorem cupiditate tempora ea? Adipisci dolore nemo rerum natus quisquam beatae, ratione necessitatibus sit dolorum voluptates, nobis error laudantium!
+    Possimus libero inventore quae iure deleniti tempora voluptatibus facere quaerat explicabo placeat, tempore reprehenderit harum voluptas cumque dolorem necessitatibus vel optio commodi ipsa vero dignissimos quidem quibusdam cupiditate. Eius, quasi.
+    Amet repudiandae, in iure atque tempora obcaecati nulla suscipit ipsa, itaque dolor nesciunt distinctio ratione dignissimos voluptas, dicta enim? Laborum incidunt autem, reiciendis voluptates a quae earum officiis mollitia temporibus.
+    Dicta, veniam optio illum autem quam iste deleniti laborum maiores sapiente aliquid? Ad repellendus veritatis expedita odit tenetur commodi, officia ea cumque sed quisquam adipisci optio quos eaque ipsam? Aliquam.
+    Illo voluptatibus tempora consequuntur consectetur unde numquam sunt cupiditate, minima quia modi quasi maxime voluptate quibusdam perspiciatis aperiam voluptatum dicta temporibus dignissimos ducimus! Tempora dolorem, adipisci totam harum molestiae magnam?
+    Laudantium autem rerum nostrum non eius dolores aspernatur esse inventore odio est nemo nihil repudiandae reiciendis adipisci vero corporis iusto libero assumenda, quaerat obcaecati veritatis? Quasi enim accusantium iusto eligendi.
+    Incidunt repudiandae ut excepturi quia ducimus eveniet, dolores sequi suscipit laudantium et quibusdam fugit autem maxime corporis quo in nesciunt optio cupiditate itaque blanditiis dolor architecto molestias? Cum, inventore alias?
+    Necessitatibus quod nam, magnam recusandae culpa deserunt et excepturi nisi doloremque beatae dignissimos ad explicabo ipsum pariatur a. Cupiditate doloribus nesciunt provident obcaecati accusamus eligendi impedit laudantium beatae eos iure!
+    Laudantium exercitationem perspiciatis blanditiis magni veniam veritatis amet! Minus cumque officia id consequatur, alias nesciunt dolor eligendi excepturi dolores ab quam vel quis ipsum nostrum incidunt ut cupiditate quidem blanditiis!
+    Sed sapiente ex dolore delectus illo odit doloremque architecto modi, sit mollitia debitis hic laboriosam, eum magnam cumque et officia rem. Ab sunt temporibus voluptate sit itaque aperiam error eligendi!
+    Ex commodi rerum maxime repellendus dolores, sed ea numquam, pariatur atque doloremque ducimus exercitationem ipsa eaque dolorum. Animi adipisci laboriosam voluptas. Voluptatum enim unde labore corporis nesciunt aliquam cum dolorem.
+    Libero excepturi amet assumenda quo fugiat dolore fuga quos pariatur aut in. Eligendi, odit consequatur. Quam aliquid itaque officia natus eligendi? Odio sequi blanditiis quia praesentium dolorum? Ipsum, consequuntur ipsa.
+    Adipisci debitis mollitia odit, neque delectus vitae nam, distinctio, at similique est iste nobis. Id asperiores libero perspiciatis laudantium quae quia, accusantium, aut architecto, sed quas cumque iusto dignissimos ut?
+    Harum amet fuga illo dolorem ex iure tenetur reprehenderit rem eaque explicabo at dolore autem, blanditiis ratione nobis facere eligendi optio unde molestiae accusamus fugit? Laborum consequuntur ex ipsa tenetur?
+    Explicabo est totam maxime officiis error, nam, voluptatibus laborum sint quasi maiores odit unde aspernatur repellendus. Ut aliquid voluptatibus dignissimos rem, consectetur ipsa magnam odit in debitis fuga aperiam tempora?
+    Maxime quisquam ratione ipsa quae qui eaque nam nostrum perferendis neque obcaecati exercitationem illum hic iure commodi vel laudantium aspernatur inventore quo quibusdam nulla iusto dolorum non, facere molestias. Suscipit.
+  </div>
+</div>
+</body>
+</html>

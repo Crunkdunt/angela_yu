@@ -1,0 +1,52 @@
+function main(){
+      runKarel();
+}
+function putAndMove1() {
+   if (noBeepersPresent()) {
+      while (frontIsClear()) {
+         putBeeper();
+         move();
+         move();
+      }
+   } else {
+      while (frontIsClear()) {
+         move();
+         move();
+         putBeeper();
+      }
+   }
+}  
+function putAndMove2() {
+   while (frontIsClear()) {
+   move();
+   putBeeper();
+   move();
+   }
+}
+function leftTurn() {
+            if (noBeepersPresent()){
+               putBeeper();
+               turnLeft();
+               move();
+               turnLeft();
+            } else {
+       
+               turnLeft();
+               move();
+               turnLeft();
+               }
+      }
+function rightTurn() {
+      turnRight();
+      move();
+      putBeeper();
+      turnRight();   
+}
+function runKarel() {
+   while(frontIsClear()){
+      putAndMove1();
+      leftTurn();
+      putAndMove2();
+      rightTurn(); 
+   }
+}
